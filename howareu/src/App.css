@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.center-center {
+  align-content: center;
+  justify-content: center;
+}
+
+.content {
+  min-height: 90vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navigation-bar {
+  min-height: 10vh;
+  display: flex;
+  flex: 1;
+}
+
+.fill {
+  flex: 1;
+}
+
+.button {
+  display: inline-flex;
+  font-size: 2rem;
+}
