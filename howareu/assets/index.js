@@ -1,0 +1,13 @@
+export const BUCKTOOTH = require('./reaction.gif'); 
+export const BUCKTOOTH00 = require('./bucktooth/frame00.png');
+export const BUCKTOOTH01 = require('./bucktooth/frame01.png');
+export const BUCKTOOTH02 = require('./bucktooth/frame02.png');
+export const BUCKTOOTH03 = require('./bucktooth/frame03.png');
+export const BUCKTOOTH04 = require('./bucktooth/frame04.png');
+export const BUCKTOOTH05 = require('./bucktooth/frame05.png');
+export const BUCKTOOTH06 = require('./bucktooth/frame06.png');
+export const BUCKTOOTH07 = require('./bucktooth/frame07.png');
+export const BUCKTOOTH08 = require('./bucktooth/frame08.png');
+export const BUCKTOOTH09 = require('./bucktooth/frame09.png');
+export const BUCKTOOTH10 = require('./bucktooth/frame10.png');
+export const BUCKTOOTH11 = require('./bucktooth/frame11.png');
