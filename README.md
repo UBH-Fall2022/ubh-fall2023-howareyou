@@ -1,3 +1,11 @@
+# HowAreU?
+- sometimes you are happy, other times, you are not.
+- this app keeps track of that, to prevent you from letting one bad moment ruin an otherwise good day.
+
+# Technology used
+- React
+- Expo
+
 # UB Hacking Fall 2022 Rules 
 - Teams can consist of between 1 and 4 people.
 - To have your submission be considered for judging, you must submit a 2-5 minute video along with your project. Try to keep it as concise as possible!
@@ -10,5 +18,3 @@
 
 # TODO:
 - calendar
-- style
-- database
