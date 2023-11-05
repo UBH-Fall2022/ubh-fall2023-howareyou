@@ -27,7 +27,7 @@ bucktoothImages.reverse(); // OOPS THEY ARE BACKWARDS.
 
 
 const EntryScreen = () => {
-  const [sliderValue, setSliderValue] = useState(0);
+  const [sliderValue, setSliderValue] = useState(11);
   const [textInputValue, setTextInputValue] = useState('');
   const [currentImage, setCurrentImage] = useState(bucktoothImages[11]);
 

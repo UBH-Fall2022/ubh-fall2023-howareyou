@@ -18,13 +18,16 @@ import { BUCKTOOTH09 } from '../assets';
 import { BUCKTOOTH10 } from '../assets';
 import { BUCKTOOTH11 } from '../assets';
 
-let bucktoothImages = [
+const bucktoothImages = [
   BUCKTOOTH00, BUCKTOOTH01, BUCKTOOTH02, BUCKTOOTH03, BUCKTOOTH04, BUCKTOOTH05, 
   BUCKTOOTH06, BUCKTOOTH07, BUCKTOOTH08, BUCKTOOTH09, BUCKTOOTH10, BUCKTOOTH11
 ];
 
 bucktoothImages.reverse(); // I DIDNT EXPECT TO USE THESE AGAIN LMAO
 
+const calendarTheme = {
+    
+}
 
 const OverviewScreen = () => {
     const [selected, setSelected] = useState('');
@@ -50,7 +53,7 @@ const OverviewScreen = () => {
 
     useFocusEffect( () => {
         fetchEntries();
-    })
+    });
 
     useEffect(() => {
         const entriesForDay = entries.filter(entry => {
