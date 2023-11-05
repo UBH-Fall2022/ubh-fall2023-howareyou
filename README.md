@@ -42,7 +42,7 @@ There are still features to be added:
 
 
 ## Technology used
-- React
+- React Native
 - Expo
 - Expo-SQlite
 
