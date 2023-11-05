@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
 import {Calendar} from 'react-native-calendars';
+import { useFocusEffect } from '@react-navigation/native';
 
 import { db } from '../handlers';
 
@@ -47,10 +48,9 @@ const OverviewScreen = () => {
         }
     };
 
-
-    useEffect(() => { // fetch all entries when screen selected
+    useFocusEffect( () => {
         fetchEntries();
-    }, []);
+    })
 
     useEffect(() => {
         const entriesForDay = entries.filter(entry => {
