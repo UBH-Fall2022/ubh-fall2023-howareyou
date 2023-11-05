@@ -33,23 +33,22 @@ const OverviewScreen = () => {
     const [averageEntry, setAverageEntry] = useState(0);
     const [displayAverage, setDisplayAverage] = useState(false);
 
+    const fetchEntries = async () => {
+        try {
+            const allEntries = await db.getAllEntries(db.db);
+            setEntries(allEntries);
+
+            if (allEntries.length > 0) { // for debugging
+                setFirstEntry(allEntries[0]);
+            }
+        } catch (error) {
+            console.error('error fetching entries')
+            throw error;
+        }
+    };
 
 
     useEffect(() => { // fetch all entries when screen selected
-        const fetchEntries = async () => {
-            try {
-                const allEntries = await db.getAllEntries(db.db);
-                setEntries(allEntries);
-
-                if (allEntries.length > 0) { // for debugging
-                    setFirstEntry(allEntries[0]);
-                }
-            } catch (error) {
-                console.error('error fetching entries')
-                throw error;
-            }
-        };
-
         fetchEntries();
     }, []);
 
@@ -83,7 +82,7 @@ const OverviewScreen = () => {
         } else {
             return (
                 <View>
-                    <Text style={styles.noEntriesText}>No entries for this day. It is up to you if had a good day! :)</Text>
+                    <Text style={styles.noEntriesText}>No entries for this day. It is up to you if you had a good day! :)</Text>
                 </View>
             )
         }
@@ -105,7 +104,7 @@ const OverviewScreen = () => {
                 return
             }
         }
-        return null; // If displayAverage is false, return null to render nothing.
+        return null; // render nothing 
     };
 
     return ( // static part of screen ------------------------------------------------------------------------------------------
