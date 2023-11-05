@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Slider from '@react-native-community/slider';
 import { BUCKTOOTH } from '../assets'; // original bucktooth gif
+import { db } from '../handlers';
 
 // bucktooth be like
 import { BUCKTOOTH00 } from '../assets';
@@ -25,7 +26,6 @@ let bucktoothImages = [
 bucktoothImages.reverse(); // OOPS THEY ARE BACKWARDS.
 
 
-
 const EntryScreen = () => {
   const [sliderValue, setSliderValue] = useState(0);
   const [textInputValue, setTextInputValue] = useState('');
@@ -34,6 +34,15 @@ const EntryScreen = () => {
   const sliderUpdate = (value) => {
     setSliderValue(value);
     setCurrentImage(bucktoothImages[value]);
+  }
+
+  const handleSubmit = () =>{
+    if (textInputValue == '') {
+      return;
+    }
+    db.addEntry(db.db, textInputValue, sliderValue)
+
+    setTextInputValue('');
   }
 
   return (
@@ -60,7 +69,7 @@ const EntryScreen = () => {
         onChangeText={setTextInputValue}
       />
 
-      <TouchableOpacity onPress={null}>
+      <TouchableOpacity onPress={handleSubmit}>
         <View style={styles.button}>
           <Text style={styles.buttonText}>Create Entry</Text>
         </View>
