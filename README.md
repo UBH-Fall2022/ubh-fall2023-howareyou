@@ -2,7 +2,7 @@
 - sometimes you are happy, other times, you are not.
 - this app keeps track of that, to prevent you from letting one bad moment ruin an otherwise good day.
 
-[![](https://img.youtube.com/vi/vSbXi9SQJCY/0.jpg)](https://www.youtube.com/watch?v=vSbXi9SQJCY)
+[Demo Video](https://www.youtube.com/watch?v=vSbXi9SQJCY)
 
 ## Inspiration
 This project is partly inspired by Pikmin Bloom, a mobile game from Niantic.
