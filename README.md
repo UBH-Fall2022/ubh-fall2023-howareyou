@@ -59,4 +59,7 @@ There are still features to be added:
 - [Code of Conduct](https://drive.google.com/file/d/1RH_TtRu6EOHSbOoiSj2h1Q4jswtVILzE/view)
 
 # TODO:
-- calendar
+- Haptic feedback
+- Gestures
+- Notifications
+- Settings menu
