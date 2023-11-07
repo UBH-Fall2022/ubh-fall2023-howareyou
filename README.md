@@ -2,6 +2,8 @@
 - sometimes you are happy, other times, you are not.
 - this app keeps track of that, to prevent you from letting one bad moment ruin an otherwise good day.
 
+[![](https://img.youtube.com/vi/vSbXi9SQJCY/0.jpg)](https://www.youtube.com/watch?v=vSbXi9SQJCY)
+
 ## Inspiration
 This project is partly inspired by Pikmin Bloom, a mobile game from Niantic.
 In the game, at a chosen time daily, it allows you to save a note about your day, these are then logged in the app along with other achievements you got in game.
